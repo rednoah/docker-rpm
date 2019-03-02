@@ -1,0 +1,4 @@
+%_topdir /rpm
+%src     /src
+
+%_binary_payload w7.xzdio
