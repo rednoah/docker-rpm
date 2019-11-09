@@ -7,3 +7,8 @@ help: build
 example: build
 	mkdir -p dist
 	docker run -v $(PWD)/example:/src -v $(PWD)/dist:/rpm --rm docker-rpm -bb example.spec
+
+clean:
+	git reset --hard
+	git pull
+	git log -1
